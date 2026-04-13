@@ -11,9 +11,10 @@ set -euo pipefail
 
 echo "=== [1/4] Instalando dependencias del sistema ==="
 echo "Se instalarán: ruby-full build-essential zlib1g-dev"
+echo "               inotify-tools (para dev.sh hot reload)"
 echo ""
 sudo apt-get update
-sudo apt-get install -y ruby-full build-essential zlib1g-dev
+sudo apt-get install -y ruby-full build-essential zlib1g-dev inotify-tools
 
 echo ""
 echo "=== [2/4] Configurando directorio de gems para el usuario ==="

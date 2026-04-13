@@ -11,10 +11,21 @@ Monorepo de apuntes universitarios publicados en [GitHub Pages](https://chipaaco
 
 ## Flujo de trabajo
 
-1. Editar contenido en `sites/<materia>/`
-2. Compilar localmente: `bash scripts/build-changed.sh`
-3. Commit y push (incluir `_site_output/`)
-4. GitHub Actions publica automáticamente
+### Desarrollo (editar y ver en tiempo real)
+
+```bash
+bash scripts/dev.sh arquitectura
+```
+
+Esto lanza un servidor local con hot reload:
+- Cambios a `.md` → recarga automática en el browser
+- Cambios a `_config.yml` → restart automático del servidor
+
+### Publicar
+
+1. Compilar: `bash scripts/build-changed.sh`
+2. Commit y push (incluir `_site_output/`)
+3. GitHub Actions publica automáticamente
 
 ## Setup inicial
 
