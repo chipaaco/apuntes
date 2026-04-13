@@ -7,7 +7,9 @@ Monorepo de apuntes universitarios publicados en [GitHub Pages](https://chipaaco
 | Materia | URL | Source |
 |---------|-----|--------|
 | Arquitectura de Computadores | [Link](https://chipaaco.github.io/apuntes/arquitectura/) | `sites/arquitectura/` |
-| Sistemas Operativos | [Link](https://chipaaco.github.io/apuntes/sistemas-operativos/) | `sites/sistemas-operativos/` |
+| Física 1 (1/2) | [Link](https://chipaaco.github.io/apuntes/fisica-1/) | `sites/fisica-1/` |
+| Algoritmos y Estructuras de Datos | [Link](https://chipaaco.github.io/apuntes/aed/) | `sites/aed/` |
+| Álgebra y Geometría Analítica | [Link](https://chipaaco.github.io/apuntes/algebra/) | `sites/algebra/` |
 
 ## Flujo de trabajo
 

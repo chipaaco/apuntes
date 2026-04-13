@@ -1,0 +1,37 @@
+{"0": {
+    "doc": "Cinemática",
+    "title": "Cinemática",
+    "content": "Estudio del movimiento sin considerar las causas que lo producen. | Posición y desplazamiento | Velocidad media e instantánea | Aceleración | Movimiento rectilíneo uniforme (MRU) | . ",
+    "url": "/apuntes/fisica-1/docs/ejemplo.html",
+    
+    "relUrl": "/docs/ejemplo.html"
+  },"1": {
+    "doc": "Cinemática",
+    "title": "Conceptos clave",
+    "content": ". | Trayectoria | Sistema de referencia | Ecuaciones horarias del movimiento | . ",
+    "url": "/apuntes/fisica-1/docs/ejemplo.html#conceptos-clave",
+    
+    "relUrl": "/docs/ejemplo.html#conceptos-clave"
+  },"2": {
+    "doc": "Inicio",
+    "title": "Física 1 (1/2)",
+    "content": "Bienvenido a los apuntes de Física 1 (1/2). ",
+    "url": "/apuntes/fisica-1/#f%C3%ADsica-1-12",
+    
+    "relUrl": "/#física-1-12"
+  },"3": {
+    "doc": "Inicio",
+    "title": "Contenido",
+    "content": "Estos apuntes cubren los conceptos fundamentales de física 1, incluyendo mecánica, cinemática, dinámica y más. ",
+    "url": "/apuntes/fisica-1/#contenido",
+    
+    "relUrl": "/#contenido"
+  },"4": {
+    "doc": "Inicio",
+    "title": "Inicio",
+    "content": " ",
+    "url": "/apuntes/fisica-1/",
+    
+    "relUrl": "/"
+  }
+}

@@ -1,0 +1,13 @@
+# sites/algebra/_config.yml
+# Config específica — sobreescribe valores de _global/config.yml si hay conflicto
+
+title: "ÁlgGA-26"
+description: "Apuntes de álgebra y geometría analítica"
+
+# CRÍTICO: baseurl debe ser /apuntes/<nombre-del-sub-sitio>
+# Sin este valor, los CSS, JS y links se rompen en GitHub Pages
+baseurl: "/apuntes/algebra"
+url: "https://chipaaco.github.io"
+
+# Fuente del edit link
+gh_edit_source: "sites/algebra"

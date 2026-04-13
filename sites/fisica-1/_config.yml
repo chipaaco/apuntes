@@ -1,0 +1,13 @@
+# sites/fisica-1/_config.yml
+# Config específica — sobreescribe valores de _global/config.yml si hay conflicto
+
+title: "Fís1/2-26"
+description: "Apuntes de física 1 (1/2)"
+
+# CRÍTICO: baseurl debe ser /apuntes/<nombre-del-sub-sitio>
+# Sin este valor, los CSS, JS y links se rompen en GitHub Pages
+baseurl: "/apuntes/fisica-1"
+url: "https://chipaaco.github.io"
+
+# Fuente del edit link
+gh_edit_source: "sites/fisica-1"

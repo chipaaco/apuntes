@@ -1,0 +1,37 @@
+{"0": {
+    "doc": "Vectores",
+    "title": "Vectores",
+    "content": "Magnitudes que poseen módulo, dirección y sentido. | Suma y resta de vectores | Producto escalar | Producto vectorial | Producto mixto | . ",
+    "url": "/apuntes/algebra/docs/ejemplo.html",
+    
+    "relUrl": "/docs/ejemplo.html"
+  },"1": {
+    "doc": "Vectores",
+    "title": "Conceptos clave",
+    "content": ". | Representación en coordenadas cartesianas | Dependencia e independencia lineal | Base y dimensión | . ",
+    "url": "/apuntes/algebra/docs/ejemplo.html#conceptos-clave",
+    
+    "relUrl": "/docs/ejemplo.html#conceptos-clave"
+  },"2": {
+    "doc": "Inicio",
+    "title": "Álgebra y Geometría Analítica",
+    "content": "Bienvenido a los apuntes de Álgebra y Geometría Analítica. ",
+    "url": "/apuntes/algebra/#%C3%A1lgebra-y-geometr%C3%ADa-anal%C3%ADtica",
+    
+    "relUrl": "/#álgebra-y-geometría-analítica"
+  },"3": {
+    "doc": "Inicio",
+    "title": "Contenido",
+    "content": "Estos apuntes cubren los conceptos fundamentales de álgebra y geometría analítica, incluyendo vectores, matrices, sistemas de ecuaciones y más. ",
+    "url": "/apuntes/algebra/#contenido",
+    
+    "relUrl": "/#contenido"
+  },"4": {
+    "doc": "Inicio",
+    "title": "Inicio",
+    "content": " ",
+    "url": "/apuntes/algebra/",
+    
+    "relUrl": "/"
+  }
+}

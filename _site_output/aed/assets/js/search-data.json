@@ -1,0 +1,37 @@
+{"0": {
+    "doc": "Complejidad Algorítmica",
+    "title": "Complejidad Algorítmica",
+    "content": "Análisis de la eficiencia de algoritmos en función del tamaño de la entrada. | Notación Big-O — cota superior asintótica | Notación Omega — cota inferior asintótica | Notación Theta — cota ajustada | . ",
+    "url": "/apuntes/aed/docs/ejemplo.html",
+    
+    "relUrl": "/docs/ejemplo.html"
+  },"1": {
+    "doc": "Complejidad Algorítmica",
+    "title": "Conceptos clave",
+    "content": ". | Tiempo de ejecución vs. espacio en memoria | Casos: mejor, promedio, peor | Comparación de algoritmos de ordenamiento | . ",
+    "url": "/apuntes/aed/docs/ejemplo.html#conceptos-clave",
+    
+    "relUrl": "/docs/ejemplo.html#conceptos-clave"
+  },"2": {
+    "doc": "Inicio",
+    "title": "Algoritmos y Estructuras de Datos",
+    "content": "Bienvenido a los apuntes de Algoritmos y Estructuras de Datos. ",
+    "url": "/apuntes/aed/#algoritmos-y-estructuras-de-datos",
+    
+    "relUrl": "/#algoritmos-y-estructuras-de-datos"
+  },"3": {
+    "doc": "Inicio",
+    "title": "Contenido",
+    "content": "Estos apuntes cubren los conceptos fundamentales de algoritmos y estructuras de datos, incluyendo complejidad algorítmica, estructuras lineales, árboles y más. ",
+    "url": "/apuntes/aed/#contenido",
+    
+    "relUrl": "/#contenido"
+  },"4": {
+    "doc": "Inicio",
+    "title": "Inicio",
+    "content": " ",
+    "url": "/apuntes/aed/",
+    
+    "relUrl": "/"
+  }
+}
