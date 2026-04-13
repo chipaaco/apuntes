@@ -33,21 +33,27 @@ sync_global_dir() {
         local dest_dir
         dest_dir="$(dirname "$dest_file")"
 
-        # Si ya existe un archivo real en el sitio (y no es uno que nosotros copiamos antes), el local tiene prioridad.
-        # En Jekyll, preferimos no sobreescribir si el usuario puso algo ahí.
-        if [ -f "$dest_file" ] && [ ! -L "$dest_file" ]; then
-            # Nota: Si usamos cp, no podemos distinguir fácilmente si es nuestro o del usuario 
-            # a menos que usemos un hash o metadata. Pero para este caso, si el archivo existe 
-            # y es diferente, podemos elegir.
-            # Vamos a simplificar: si existe en el sitio, NO lo pisamos.
-            echo "   ⚠️  Saltando $rel_to_root (ya existe en el sitio)"
-            continue
+        # Si ya existe un archivo real (no symlink), el local tiene prioridad
+        if [ -e "$dest_file" ] && [ ! -L "$dest_file" ]; then
+            # Verificar si es una copia nuestra anterior (misma checksum) o un override del usuario
+            if cmp -s "$global_file" "$dest_file"; then
+                # Es nuestra copia anterior, igual → no hacer nada
+                continue
+            else
+                echo "   ⚠️  Saltando $rel_to_root (usando versión local)"
+                continue
+            fi
+        fi
+
+        # Si es un symlink viejo, eliminarlo
+        if [ -L "$dest_file" ]; then
+            rm "$dest_file"
         fi
 
         # Crear directorio de destino
         mkdir -p "$dest_dir"
         
-        # Copiar archivo (usamos -p para preservar timestamps y evitar que Jekyll recompile todo si no cambió)
+        # Copiar archivo
         cp -p "$global_file" "$dest_file"
     done
 }
