@@ -1,0 +1,9 @@
+# sites/sistemas-operativos/_config.yml
+
+title: "Sistemas Operativos"
+description: "Apuntes de sistemas operativos"
+
+baseurl: "/apuntes/sistemas-operativos"
+url: "https://chipaaco.github.io"
+
+gh_edit_source: "sites/sistemas-operativos"

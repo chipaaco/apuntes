@@ -1,0 +1,31 @@
+# _global/config.yml
+# ==================================================
+# CONFIGURACIÓN GLOBAL — Compartida entre sub-sitios
+# ==================================================
+
+# Tema
+theme: just-the-docs
+
+# Esquema de color (opciones: "light", "dark")
+color_scheme: dark
+
+# Búsqueda
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+
+# Navegación
+nav_enabled: true
+heading_anchors: true
+
+# Footer
+gh_edit_link: true
+gh_edit_link_text: "Editar esta página en GitHub"
+gh_edit_repository: "https://github.com/chipaaco/apuntes"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
+
+# Plugins requeridos
+plugins:
+  - jekyll-seo-tag

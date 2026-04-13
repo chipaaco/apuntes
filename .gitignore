@@ -1,0 +1,17 @@
+# Jekyll build artifacts (dentro de cada sub-sitio)
+sites/*/_site/
+sites/*/.jekyll-cache/
+sites/*/.jekyll-metadata
+sites/*/.sass-cache/
+
+# Ruby
+sites/*/Gemfile.lock
+*.gem
+vendor/
+
+# NO ignorar _site_output/ — se commitea intencionalmente
+# _site_output/
+
+# OS
+.DS_Store
+Thumbs.db
