@@ -1,7 +1,7 @@
 # sites/arquitectura/_config.yml
 # Config específica — sobreescribe valores de _global/config.yml si hay conflicto
 
-title: "Arq"
+title: "Arq-26"
 description: "Apuntes de arquitectura de computadores"
 
 # CRÍTICO: baseurl debe ser /apuntes/<nombre-del-sub-sitio>

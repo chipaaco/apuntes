@@ -7,7 +7,7 @@
 theme: just-the-docs
 
 # Esquema de color (opciones: "light", "dark")
-color_scheme: light
+color_scheme: dark
 
 # Búsqueda
 search_enabled: true
@@ -18,6 +18,25 @@ search:
 # Navegación
 nav_enabled: true
 heading_anchors: true
+
+# External navigation links
+nav_external_links:
+  - title: Hablemos por Telegram
+    url: https://t.me/chipaaco
+    hide_icon: true # set to true to hide the external link icon - defaults to false
+    opens_in_new_tab: true # set to true to open this link in a new tab - defaults to false
+
+
+aux_links:
+  "Lista de todos los apuntes":
+    - "https://github.com/chipaaco/apuntes?tab=readme-ov-file#sub-sitios"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+# Textos y Componentes Generales
+back_to_top: true
+back_to_top_text: "Volver arriba"
 
 # Footer
 gh_edit_link: true
