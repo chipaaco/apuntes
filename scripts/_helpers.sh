@@ -5,41 +5,57 @@
 # Uso: source "$(dirname "$0")/_helpers.sh"
 # ===========================================================
 
-# sync_global_includes <site_dir>
+# sync_global_dir <site_dir> <dir_name>
 #
-# Crea symlinks en <site_dir>/_includes/ apuntando a cada
-# archivo de _global/_includes/, SIN sobreescribir archivos
-# locales que ya existan (los locales tienen prioridad).
-#
-# Los symlinks se crean como relativos para que funcionen
-# tanto en dev local como en CI.
-sync_global_includes() {
+# Sincroniza archivos desde _global/<dir_name>/ hacia <site_dir>/<dir_name>/
+# Copiando archivos. Respeta archivos locales.
+# Mantiene la estructura de subdirectorios.
+sync_global_dir() {
     local site_dir="$1"
+    local dir_name="$2"
     local repo_root
     repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-    local global_includes="$repo_root/_global/_includes"
-    local site_includes="$site_dir/_includes"
+    local global_src="$repo_root/_global/$dir_name"
+    local site_dest="$site_dir/$dir_name"
 
-    # Si no hay includes globales, no hacer nada
-    if [ ! -d "$global_includes" ] || [ -z "$(ls -A "$global_includes" 2>/dev/null)" ]; then
+    # Si no existe el origen global, no hacer nada
+    if [ ! -d "$global_src" ]; then
         return 0
     fi
 
-    mkdir -p "$site_includes"
+    echo "📦 Sincronizando $dir_name globales (copia)..."
 
-    for file in "$global_includes"/*; do
-        local filename
-        filename="$(basename "$file")"
-        local target="$site_includes/$filename"
+    # Usar find para obtener todos los archivos
+    find "$global_src" -type f | while read -r global_file; do
+        # Obtener ruta relativa desde la raíz del origen global
+        local rel_to_root="${global_file#$global_src/}"
+        local dest_file="$site_dest/$rel_to_root"
+        local dest_dir
+        dest_dir="$(dirname "$dest_file")"
 
-        # Si ya existe un archivo real (no symlink), el local gana
-        if [ -e "$target" ] && [ ! -L "$target" ]; then
+        # Si ya existe un archivo real en el sitio (y no es uno que nosotros copiamos antes), el local tiene prioridad.
+        # En Jekyll, preferimos no sobreescribir si el usuario puso algo ahí.
+        if [ -f "$dest_file" ] && [ ! -L "$dest_file" ]; then
+            # Nota: Si usamos cp, no podemos distinguir fácilmente si es nuestro o del usuario 
+            # a menos que usemos un hash o metadata. Pero para este caso, si el archivo existe 
+            # y es diferente, podemos elegir.
+            # Vamos a simplificar: si existe en el sitio, NO lo pisamos.
+            echo "   ⚠️  Saltando $rel_to_root (ya existe en el sitio)"
             continue
         fi
 
-        # Crear/actualizar symlink relativo
-        local rel_path
-        rel_path="$(realpath --relative-to="$site_includes" "$file")"
-        ln -sf "$rel_path" "$target"
+        # Crear directorio de destino
+        mkdir -p "$dest_dir"
+        
+        # Copiar archivo (usamos -p para preservar timestamps y evitar que Jekyll recompile todo si no cambió)
+        cp -p "$global_file" "$dest_file"
     done
+}
+
+sync_global_includes() {
+    sync_global_dir "$1" "_includes"
+}
+
+sync_global_assets() {
+    sync_global_dir "$1" "assets"
 }

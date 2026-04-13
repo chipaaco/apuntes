@@ -9,6 +9,9 @@ theme: just-the-docs
 # Esquema de color (opciones: "light", "dark")
 color_scheme: dark
 
+# Favicon
+favicon_ico: "/assets/images/favicon.ico"
+
 # Búsqueda
 search_enabled: true
 search:

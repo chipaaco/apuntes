@@ -79,8 +79,9 @@ start_jekyll() {
 echo "=== Modo desarrollo: $SITE_NAME ==="
 (cd "$SITE_DIR" && bundle install --quiet)
 
-# --- Sincronizar _includes globales ---
+# --- Sincronizar _includes y assets globales ---
 sync_global_includes "$SITE_DIR"
+sync_global_assets "$SITE_DIR"
 
 # --- Lanzar Jekyll por primera vez ---
 start_jekyll

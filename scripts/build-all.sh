@@ -40,8 +40,9 @@ for site_dir in "$REPO_ROOT"/sites/*/; do
     # Instalar dependencias
     (cd "$site_dir" && bundle install --quiet)
 
-    # Sincronizar _includes globales
+    # Sincronizar _includes y assets globales
     sync_global_includes "$site_dir"
+    sync_global_assets "$site_dir"
 
     # Compilar con ambos configs (el segundo sobreescribe al primero)
     (cd "$site_dir" && bundle exec jekyll build \

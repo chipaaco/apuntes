@@ -4,8 +4,9 @@ sites/*/.jekyll-cache/
 sites/*/.jekyll-metadata
 sites/*/.sass-cache/
 
-# _includes generados por scripts/_helpers.sh (symlinks a _global/_includes)
+# _includes y assets generados por scripts/_helpers.sh (symlinks a _global/)
 sites/*/_includes/
+sites/*/assets/
 
 # Ruby
 sites/*/Gemfile.lock
