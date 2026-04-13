@@ -14,6 +14,9 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GLOBAL_CONFIG="$REPO_ROOT/_global/config.yml"
 OUTPUT_BASE="$REPO_ROOT/_site_output"
 
+# Cargar funciones compartidas
+source "$(dirname "$0")/_helpers.sh"
+
 # Si se pasan argumentos, usarlos como lista de sitios
 if [ $# -gt 0 ]; then
     CHANGED_SITES=("$@")
@@ -75,6 +78,9 @@ for site_name in "${CHANGED_SITES[@]}"; do
 
     # Instalar dependencias
     (cd "$site_dir" && bundle install --quiet)
+
+    # Sincronizar _includes globales
+    sync_global_includes "$site_dir"
 
     # Compilar
     (cd "$site_dir" && bundle exec jekyll build \

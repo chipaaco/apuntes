@@ -15,6 +15,9 @@ REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GLOBAL_CONFIG="$REPO_ROOT/_global/config.yml"
 OUTPUT_BASE="$REPO_ROOT/_site_output"
 
+# Cargar funciones compartidas
+source "$(dirname "$0")/_helpers.sh"
+
 # Limpiar output anterior
 rm -rf "$OUTPUT_BASE"
 mkdir -p "$OUTPUT_BASE"
@@ -36,6 +39,9 @@ for site_dir in "$REPO_ROOT"/sites/*/; do
 
     # Instalar dependencias
     (cd "$site_dir" && bundle install --quiet)
+
+    # Sincronizar _includes globales
+    sync_global_includes "$site_dir"
 
     # Compilar con ambos configs (el segundo sobreescribe al primero)
     (cd "$site_dir" && bundle exec jekyll build \

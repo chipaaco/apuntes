@@ -38,6 +38,9 @@ GLOBAL_CONFIG="$REPO_ROOT/_global/config.yml"
 SITE_DIR="$REPO_ROOT/sites/$SITE_NAME"
 SITE_CONFIG="$SITE_DIR/_config.yml"
 
+# Cargar funciones compartidas
+source "$(dirname "$0")/_helpers.sh"
+
 if [ ! -d "$SITE_DIR" ]; then
     echo "❌ Sub-sitio no encontrado: $SITE_NAME"
     exit 1
@@ -75,6 +78,9 @@ start_jekyll() {
 # --- Instalar dependencias una sola vez ---
 echo "=== Modo desarrollo: $SITE_NAME ==="
 (cd "$SITE_DIR" && bundle install --quiet)
+
+# --- Sincronizar _includes globales ---
+sync_global_includes "$SITE_DIR"
 
 # --- Lanzar Jekyll por primera vez ---
 start_jekyll
