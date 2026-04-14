@@ -21,6 +21,12 @@ El concepto de vectores equivalentes o equipolentes establece que dos o más vec
 
 Este tema es la base visual de la guía. Los siguientes apartados traducen estas flechas a coordenadas numéricas (componentes $x, y, z$) para realizar cálculos exactos de suma, resta y productos (escalar y vectorial) aplicados a problemas de física y geometría.
 
+
+<div align="center" style="margin: 30px 0;">
+  <iframe src="https://www.geogebra.org/calculator/mfmewjvk?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px; max-width: 100%;" frameborder="0"></iframe>
+</div>
+
+
 ## 1.2 Vectores algebraicos en el plano
 Representación de vectores en $\mathbb{R}^2$ mediante componentes cartesianas.
 
