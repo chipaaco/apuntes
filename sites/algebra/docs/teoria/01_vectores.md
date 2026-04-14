@@ -23,8 +23,31 @@ Este tema es la base visual de la guía. Los siguientes apartados traducen estas
 
 
 <div align="center" style="margin: 30px 0;">
-  <iframe src="https://www.geogebra.org/calculator/mfmewjvk?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px; max-width: 100%;" frameborder="0"></iframe>
+  <div id="ggb-vectores" style="max-width: 800px;"></div>
 </div>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<script>
+var ggbApp = new GGBApplet({
+  "material_id": "mfmewjvk",
+  "width": 800,
+  "height": 500,
+  "showToolBar": false,
+  "showAlgebraInput": false,
+  "showMenuBar": false,
+  "showToolBarHelp": false,
+  "showResetIcon": true,
+  "enableLabelDrags": false,
+  "enableShiftDragZoom": true,
+  "enableRightClick": false,
+  "showFullscreenButton": false,
+  "allowStyleBar": false,
+  "appName": "classic",
+  "perspective": "G"
+}, true);
+window.addEventListener("load", function() {
+  ggbApp.inject('ggb-vectores');
+});
+</script>
 
 
 ## 1.2 Vectores algebraicos en el plano
