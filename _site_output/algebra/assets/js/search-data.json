@@ -1,37 +1,205 @@
 {"0": {
-    "doc": "Vectores",
-    "title": "Vectores",
-    "content": "Magnitudes que poseen módulo, dirección y sentido. | Suma y resta de vectores | Producto escalar | Producto vectorial | Producto mixto | . ",
-    "url": "/apuntes/algebra/docs/ejemplo.html",
+    "doc": "1. Vectores",
+    "title": "1. Vectores",
+    "content": " ",
+    "url": "/apuntes/algebra/docs/teoria/01_vectores.html",
     
-    "relUrl": "/docs/ejemplo.html"
+    "relUrl": "/docs/teoria/01_vectores.html"
   },"1": {
-    "doc": "Vectores",
-    "title": "Conceptos clave",
-    "content": ". | Representación en coordenadas cartesianas | Dependencia e independencia lineal | Base y dimensión | . ",
-    "url": "/apuntes/algebra/docs/ejemplo.html#conceptos-clave",
+    "doc": "1. Vectores",
+    "title": "1.1 Vector geométrico",
+    "content": "Un vector geométrico es un segmento de recta orientado, representado visualmente como una flecha. Sus tres elementos definitorios son: . | Módulo: la longitud del segmento. | Dirección: la recta sobre la que se apoya. | Sentido: la orientación indicada por la punta de la flecha. | . El concepto de vectores equivalentes o equipolentes establece que dos o más vectores son iguales si comparten el mismo módulo, dirección y sentido, sin importar su ubicación en el espacio. Esto permite desplazar los vectores libremente siempre que no se modifique su forma u orientación. Este tema es la base visual de la guía. Los siguientes apartados traducen estas flechas a coordenadas numéricas (componentes $x, y, z$) para realizar cálculos exactos de suma, resta y productos (escalar y vectorial) aplicados a problemas de física y geometría. ",
+    "url": "/apuntes/algebra/docs/teoria/01_vectores.html#11-vector-geom%C3%A9trico",
     
-    "relUrl": "/docs/ejemplo.html#conceptos-clave"
+    "relUrl": "/docs/teoria/01_vectores.html#11-vector-geométrico"
   },"2": {
+    "doc": "1. Vectores",
+    "title": "1.2 Vectores algebraicos en el plano",
+    "content": "Representación de vectores en $\\mathbb{R}^2$ mediante componentes cartesianas. ",
+    "url": "/apuntes/algebra/docs/teoria/01_vectores.html#12-vectores-algebraicos-en-el-plano",
+    
+    "relUrl": "/docs/teoria/01_vectores.html#12-vectores-algebraicos-en-el-plano"
+  },"3": {
+    "doc": "1. Vectores",
+    "title": "1.3 Vectores unitarios estándar o canónicos en el plano",
+    "content": "Definición de los vectores $\\mathbf{i}$ y $\\mathbf{j}$. ",
+    "url": "/apuntes/algebra/docs/teoria/01_vectores.html#13-vectores-unitarios-est%C3%A1ndar-o-can%C3%B3nicos-en-el-plano",
+    
+    "relUrl": "/docs/teoria/01_vectores.html#13-vectores-unitarios-estándar-o-canónicos-en-el-plano"
+  },"4": {
+    "doc": "1. Vectores",
+    "title": "1.4 Vectores algebraicos en el espacio",
+    "content": "Representación de vectores en $\\mathbb{R}^3$ mediante componentes $(x, y, z)$. ",
+    "url": "/apuntes/algebra/docs/teoria/01_vectores.html#14-vectores-algebraicos-en-el-espacio",
+    
+    "relUrl": "/docs/teoria/01_vectores.html#14-vectores-algebraicos-en-el-espacio"
+  },"5": {
+    "doc": "2. Operaciones vectoriales básicas",
+    "title": "2. Operaciones vectoriales básicas",
+    "content": " ",
+    "url": "/apuntes/algebra/docs/teoria/02_operaciones.html",
+    
+    "relUrl": "/docs/teoria/02_operaciones.html"
+  },"6": {
+    "doc": "2. Operaciones vectoriales básicas",
+    "title": "2.1 Suma de vectores",
+    "content": "Interpretación geométrica (regla del paralelogramo) y analítica. ",
+    "url": "/apuntes/algebra/docs/teoria/02_operaciones.html#21-suma-de-vectores",
+    
+    "relUrl": "/docs/teoria/02_operaciones.html#21-suma-de-vectores"
+  },"7": {
+    "doc": "2. Operaciones vectoriales básicas",
+    "title": "2.2 Producto de un vector por un escalar",
+    "content": "Multiplicación de un vector por un número real. ",
+    "url": "/apuntes/algebra/docs/teoria/02_operaciones.html#22-producto-de-un-vector-por-un-escalar",
+    
+    "relUrl": "/docs/teoria/02_operaciones.html#22-producto-de-un-vector-por-un-escalar"
+  },"8": {
+    "doc": "2. Operaciones vectoriales básicas",
+    "title": "2.3 Vectores paralelos",
+    "content": "Condición de paralelismo entre dos vectores. ",
+    "url": "/apuntes/algebra/docs/teoria/02_operaciones.html#23-vectores-paralelos",
+    
+    "relUrl": "/docs/teoria/02_operaciones.html#23-vectores-paralelos"
+  },"9": {
+    "doc": "2. Operaciones vectoriales básicas",
+    "title": "2.4 Notación empleando los vectores unitarios canónicos",
+    "content": "Expresión de vectores como combinación lineal de $\\mathbf{i}$, $\\mathbf{j}$ y $\\mathbf{k}$. ",
+    "url": "/apuntes/algebra/docs/teoria/02_operaciones.html#24-notaci%C3%B3n-empleando-los-vectores-unitarios-can%C3%B3nicos",
+    
+    "relUrl": "/docs/teoria/02_operaciones.html#24-notación-empleando-los-vectores-unitarios-canónicos"
+  },"10": {
+    "doc": "2. Operaciones vectoriales básicas",
+    "title": "2.5 Ecuaciones vectoriales",
+    "content": "Resolución de problemas mediante expresiones vectoriales. ",
+    "url": "/apuntes/algebra/docs/teoria/02_operaciones.html#25-ecuaciones-vectoriales",
+    
+    "relUrl": "/docs/teoria/02_operaciones.html#25-ecuaciones-vectoriales"
+  },"11": {
+    "doc": "2. Operaciones vectoriales básicas",
+    "title": "2.6 Componentes de un vector y Vectores unitarios",
+    "content": "Cálculo de componentes y normalización de vectores. ",
+    "url": "/apuntes/algebra/docs/teoria/02_operaciones.html#26-componentes-de-un-vector-y-vectores-unitarios",
+    
+    "relUrl": "/docs/teoria/02_operaciones.html#26-componentes-de-un-vector-y-vectores-unitarios"
+  },"12": {
+    "doc": "3. Producto escalar de vectores",
+    "title": "3. Producto escalar de vectores",
+    "content": " ",
+    "url": "/apuntes/algebra/docs/teoria/03_producto_escalar.html",
+    
+    "relUrl": "/docs/teoria/03_producto_escalar.html"
+  },"13": {
+    "doc": "3. Producto escalar de vectores",
+    "title": "3.1 Ángulo entre dos vectores",
+    "content": "Cálculo del ángulo mediante el producto escalar. ",
+    "url": "/apuntes/algebra/docs/teoria/03_producto_escalar.html#31-%C3%A1ngulo-entre-dos-vectores",
+    
+    "relUrl": "/docs/teoria/03_producto_escalar.html#31-ángulo-entre-dos-vectores"
+  },"14": {
+    "doc": "3. Producto escalar de vectores",
+    "title": "3.2 Vectores ortogonales",
+    "content": "Condición de perpendicularidad. ",
+    "url": "/apuntes/algebra/docs/teoria/03_producto_escalar.html#32-vectores-ortogonales",
+    
+    "relUrl": "/docs/teoria/03_producto_escalar.html#32-vectores-ortogonales"
+  },"15": {
+    "doc": "3. Producto escalar de vectores",
+    "title": "3.3 Proyecciones y componentes vectoriales",
+    "content": "Proyección de un vector sobre otro. ",
+    "url": "/apuntes/algebra/docs/teoria/03_producto_escalar.html#33-proyecciones-y-componentes-vectoriales",
+    
+    "relUrl": "/docs/teoria/03_producto_escalar.html#33-proyecciones-y-componentes-vectoriales"
+  },"16": {
+    "doc": "4. Producto Vectorial",
+    "title": "4. Producto Vectorial",
+    "content": "Definición, propiedades e interpretación geométrica (área del paralelogramo). ",
+    "url": "/apuntes/algebra/docs/teoria/04_producto_vectorial.html",
+    
+    "relUrl": "/docs/teoria/04_producto_vectorial.html"
+  },"17": {
+    "doc": "5. Producto Mixto",
+    "title": "5. Producto Mixto o triple producto escalar",
+    "content": "Definición, propiedades e interpretación geométrica (volumen del paralelepípedo). ",
+    "url": "/apuntes/algebra/docs/teoria/05_producto_mixto.html#5-producto-mixto-o-triple-producto-escalar",
+    
+    "relUrl": "/docs/teoria/05_producto_mixto.html#5-producto-mixto-o-triple-producto-escalar"
+  },"18": {
+    "doc": "5. Producto Mixto",
+    "title": "5. Producto Mixto",
+    "content": " ",
+    "url": "/apuntes/algebra/docs/teoria/05_producto_mixto.html",
+    
+    "relUrl": "/docs/teoria/05_producto_mixto.html"
+  },"19": {
+    "doc": "6. Bibliografía",
+    "title": "6. Bibliografía",
+    "content": "Fuentes y material de referencia para el estudio de la materia. ",
+    "url": "/apuntes/algebra/docs/teoria/06_bibliografia.html",
+    
+    "relUrl": "/docs/teoria/06_bibliografia.html"
+  },"20": {
+    "doc": "Guía Práctica",
+    "title": "Guía Práctica",
+    "content": "Aquí se encuentran los ejercicios y problemas para practicar. ",
+    "url": "/apuntes/algebra/docs/guia_practica.html",
+    
+    "relUrl": "/docs/guia_practica.html"
+  },"21": {
+    "doc": "Guía Práctica",
+    "title": "Trabajos Prácticos",
+    "content": ". | TP 1: Vectores | TP 2: Matrices y Determinantes | TP 3: Sistemas de Ecuaciones | TP 4: Espacios Vectoriales | TP 5: Transformaciones Lineales | TP 6: Autovalores y Autovectores | TP 7: Cónicas y Cuádricas | . ",
+    "url": "/apuntes/algebra/docs/guia_practica.html#trabajos-pr%C3%A1cticos",
+    
+    "relUrl": "/docs/guia_practica.html#trabajos-prácticos"
+  },"22": {
     "doc": "Inicio",
     "title": "Álgebra y Geometría Analítica",
     "content": "Bienvenido a los apuntes de Álgebra y Geometría Analítica. ",
     "url": "/apuntes/algebra/#%C3%A1lgebra-y-geometr%C3%ADa-anal%C3%ADtica",
     
     "relUrl": "/#álgebra-y-geometría-analítica"
-  },"3": {
+  },"23": {
     "doc": "Inicio",
     "title": "Contenido",
     "content": "Estos apuntes cubren los conceptos fundamentales de álgebra y geometría analítica, incluyendo vectores, matrices, sistemas de ecuaciones y más. ",
     "url": "/apuntes/algebra/#contenido",
     
     "relUrl": "/#contenido"
-  },"4": {
+  },"24": {
     "doc": "Inicio",
     "title": "Inicio",
     "content": " ",
     "url": "/apuntes/algebra/",
     
     "relUrl": "/"
+  },"25": {
+    "doc": "Notas de Clase",
+    "title": "Notas de Clase",
+    "content": "Apuntes tomados durante las clases teóricas y prácticas. ",
+    "url": "/apuntes/algebra/docs/notas_de_clase.html",
+    
+    "relUrl": "/docs/notas_de_clase.html"
+  },"26": {
+    "doc": "Notas de Clase",
+    "title": "Por fecha",
+    "content": ". | [2024-03-20] Introducción a vectores | [2024-03-27] Rectas y planos | [2024-04-03] Matrices | . ",
+    "url": "/apuntes/algebra/docs/notas_de_clase.html#por-fecha",
+    
+    "relUrl": "/docs/notas_de_clase.html#por-fecha"
+  },"27": {
+    "doc": "Teoría",
+    "title": "Teoría",
+    "content": "Contenidos teóricos de Álgebra y Geometría Analítica. ",
+    "url": "/apuntes/algebra/docs/teoria.html",
+    
+    "relUrl": "/docs/teoria.html"
+  },"28": {
+    "doc": "Teoría",
+    "title": "Índice de temas",
+    "content": ". | Vectores | Operaciones vectoriales básicas | Producto escalar de vectores | Producto Vectorial | Producto Mixto | Bibliografía | . ",
+    "url": "/apuntes/algebra/docs/teoria.html#%C3%ADndice-de-temas",
+    
+    "relUrl": "/docs/teoria.html#índice-de-temas"
   }
 }
