@@ -51,3 +51,16 @@ gh_edit_view_mode: "tree"
 # Plugins requeridos
 plugins:
   - jekyll-seo-tag
+
+# Renderizado de LaTeX (MathJax)
+math: mathjax
+use_math: true
+mathjax:
+  tex:
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    processEscapes: true
+    processEnvironments: true
+  options:
+    ignoreHtmlClass: 'tex2jax_ignore'
+    processHtmlClass: 'tex2jax_process'
