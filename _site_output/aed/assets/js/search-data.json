@@ -134,32 +134,39 @@
   },"19": {
     "doc": "Inicio",
     "title": "Algoritmos y Estructuras de Datos",
-    "content": "Bienvenido a los apuntes de Algoritmos y Estructuras de Datos. ",
+    "content": " ",
     "url": "/apuntes/aed/#algoritmos-y-estructuras-de-datos",
     
     "relUrl": "/#algoritmos-y-estructuras-de-datos"
   },"20": {
+    "doc": "Inicio",
+    "title": "Atajos útiles",
+    "content": ". | Guía de ejercicios de práctica: aed-frre.github.io | Aula virtual: frre.cvg.utn.edu.ar | . Bienvenido a los apuntes de Algoritmos y Estructuras de Datos. ",
+    "url": "/apuntes/aed/#atajos-%C3%BAtiles",
+    
+    "relUrl": "/#atajos-útiles"
+  },"21": {
     "doc": "Inicio",
     "title": "Contenido",
     "content": "Estos apuntes cubren los conceptos fundamentales de algoritmos y estructuras de datos, incluyendo complejidad algorítmica, estructuras lineales, árboles y más. ",
     "url": "/apuntes/aed/#contenido",
     
     "relUrl": "/#contenido"
-  },"21": {
+  },"22": {
     "doc": "Inicio",
     "title": "Inicio",
     "content": " ",
     "url": "/apuntes/aed/",
     
     "relUrl": "/"
-  },"22": {
+  },"23": {
     "doc": "Práctica",
     "title": "Práctica",
     "content": "Machete rápido de sintaxis para hacer la guía a las chapas. Explicaciones largas en la parte de teoría. ",
     "url": "/apuntes/aed/docs/practica",
     
     "relUrl": "/docs/practica"
-  },"23": {
+  },"24": {
     "doc": "Teoría",
     "title": "Teoría",
     "content": "Apuntes teóricos para la práctica. Es un rejunte de la cátedra y otras fuentes, pasado por IA y retocado a mano para que se entienda mejor. ",

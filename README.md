@@ -29,6 +29,15 @@ Esto lanza un servidor local con hot reload:
 2. Commit y push (incluir `_site_output/`)
 3. GitHub Actions publica automáticamente
 
+### Commit local
+
+```bash
+bash scripts/commit-all.sh
+```
+
+Stages all changes and creates a generic conventional commit without pushing.
+After that, run: `git -C /home/chipi/workspace/github/chipaaco/apuntes push origin main`
+
 ## Setup inicial
 
 ```bash
