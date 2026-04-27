@@ -5,50 +5,71 @@ parent: Teoria
 nav_order: 2
 ---
 
-# Representación y Codificación de la Información (Clase 2)
+# Segunda clase
 
-## Codificación y Decodificación
-Propuesto por **la teoría general de codificación**.
+## TLDR
 
-* **Versión extendida:** Un sistema de codificación establece una ley de correspondencia entre los símbolos de un conjunto A y los símbolos de un conjunto B. Esto permite que un mensaje codificado en uno de ellos pueda ser convertido al otro formato respetando las reglas impuestas por dicha ley. La decodificación es el proceso inverso, que marca el camino de regreso utilizando la misma ley de correspondencia para reconstruir el mensaje original, como ocurre al conocer el factor de rotación en el cifrado César.
-* **Versión simplificada:** Es traducir información usando una regla o tabla específica para que la computadora la entienda, teniendo siempre una manera de revertir esa traducción para volver al dato original.
+Sistemas Numéricos (Sistemas de Numeración y cambio de base, Aritmética binaria, Sistemas de Codificación y representación de los números); Codificación Binaria (Representación binaria de datos e instrucciones, Características de los espacios de representación, Aspectos de los sistemas de representación); Sistemas alfanuméricos (Características de los códigos, Principales sistemas de representación); Códigos redundantes (Características de los códigos, Códigos detectores, Códigos correctores);
 
-## Sistemas Numéricos y Representación
-Propuesto por **el enfoque matemático de la arquitectura**.
+## Sistemas Numéricos
 
-* **Versión extendida:** Implica representar la información en la máquina utilizando un alfabeto compuesto por $b$ símbolos, donde cada dígito tiene un peso relativo según su notación posicional. Incluye todas las conversiones de cambio de base (por ejemplo, de decimal a binario a través de divisiones sucesivas) y las operaciones de la aritmética binaria. Se agrupan bajo unidades de bits, bytes y palabras.
-* **Versión simplificada:** Son los métodos matemáticos necesarios para que los números que nosotros usamos (como la base 10) se conviertan al lenguaje de la máquina (ceros y unos).
+El Teorema Fundamental de la Numeración es la base para entender cómo cualquier número, en cualquier sistema, se puede desarmar y expresar como una suma de potencias.
 
-## Aritmética Digital: Coma Fija y Coma Flotante
-Propuesto para **la operatoria interna de la ALU**.
+Elementos ($b$, $N$, $N \equiv$ `suma_potencias()`
 
-* **Versión extendida:** La representación en coma flotante utiliza un formato similar a la notación científica, organizando el número en tres partes: signo, mantisa y exponente. Esto es fundamental porque el registro acumulador dentro de la Unidad Aritmético Lógica (ALU) no puede operar matemáticamente con el carácter tipográfico de la "coma". El exponente es el encargado de indicar de forma lógica la posición en la que debe ubicarse la coma.
-* **Versión simplificada:** Es una técnica para guardar números decimales en la computadora indicando matemáticamente dónde va la coma, lo cual evita que la máquina tenga que guardar el dibujo de la coma y arruine sus cálculos.
+### Sistemas de Numeración y cambio de base
 
-## Códigos de Representación Alfanumérica
-Propuesto para **el ingreso de datos del usuario**.
+- Decimal a $b$
+    - Método de divisiones sucesivas entre la base b
+    - Para números fraccionarios se realizan multiplicaciones sucesivas por la base b.
+    - Consideración de restos mayores que 9 y Error de truncamiento
 
-* **Versión extendida:** Son códigos que establecen la relación biunívoca necesaria para que una computadora digital, que procesa solamente dígitos binarios, interprete el lenguaje del usuario, ya sean caracteres numéricos, alfabéticos o especiales. Cuando se teclea un símbolo, la memoria central utiliza un "programa de conversión" para traducirlo a una cadena binaria. Existen tablas de longitud fija como **ASCII** o **EBCDIC** (de 8 bits), y estándares más evolucionados como **UNICODE**, que fue diseñado empleando 16 bits para superar limitaciones previas y abarcar todos los idiomas vivos del mundo.
-* **Versión simplificada:** Son "diccionarios" internos (como el ASCII o el Unicode) que le dicen a la máquina qué grupo exacto de ceros y unos debe usar para guardar cada letra o símbolo que el usuario escribe.
+## No clasificado
 
-## Códigos de Representación Decimal (BCD)
-Propuesto para **optimizar cálculos y almacenamiento decimal**.
+Codificacion es B10 a B2, decodificación es B2 a B10
 
-* **Versión extendida:** El Código Decimal Codificado en Binario (BCD) permite representar los números decimales del 0 al 9 directamente en bloques reducidos de 4 bits. Existen diversas variantes con aplicaciones específicas:
-  * **BCD Puro o Natural (8421):** Utiliza los pesos tradicionales del sistema binario (8, 4, 2, 1) y sus valores válidos van desde 0000 hasta 1001.
-  * **BCD Empaquetado y Desempaquetado:** El formato empaquetado agrupa dos números en un solo byte (ocupando 4 bits cada uno) para ahorrar espacio y realizar cálculos dentro de la ALU. El formato desempaquetado ocupa 8 bits por dígito (separados en zona y dígito) y se usa para recibir información directa desde los periféricos.
-  * **BCD Exceso en 3:** Es un código **autocomplementario** y extremadamente óptimo. Cada extremo binario de la tabla muestra automáticamente el complemento del otro (cambiando ceros por unos y viceversa), permitiendo a la máquina conocer complementos sin hacer cuentas lógicas.
-  * **Código AIKEN (2421):** Utiliza los pesos 2-4-2-1 y también es autocomplementario. En los casos en que un número tenga doble representación posible (como ocurre con el 5), se debe optar por la combinación que cambie un solo dígito respecto al número anterior para asegurar la regla de autocomplementación.
-* **Versión simplificada:** Es una forma de escribir los números decimales usando solo paquetitos de 4 ceros y unos. Algunos de estos códigos (como Exceso en 3 o Aiken) son "mágicos" porque, al invertir sus ceros por unos, te dan gratis el número complementario sin que la computadora deba hacer ningún esfuerzo matemático.
+Dec a Bin = Divisiones sucesivas.
 
-## Códigos Redundantes y Control de Errores
-Propuesto para **la transmisión segura de la información**.
+[Divisiones Sucesivas](https://gemini.google.com/share/e92e01a6d410)
 
-* **Versión extendida:** Dado un paquete de información que viaja de un punto emisor a un punto receptor, se le agrega deliberadamente una redundancia (bits adicionales). Esto permite que el receptor, mediante una ecuación matemática, verifique si la información llegó de manera correcta o si el ruido del canal la alteró. Existen diferentes tipos, como la **paridad par e impar** (que suma un bit extra para que el conteo de unos o ceros sea siempre par o impar), el **código entrelazado**, y el **Código de Hamming**. Hamming se destaca porque genera su código garantizando una distancia mínima de 3, requisito matemático ineludible para poder no solo detectar errores, sino también ubicarlos y corregirlos.
-* **Versión simplificada:** Consiste en enviarle "datos extra" a la computadora de destino para que ella misma pueda revisar si el mensaje llegó roto o alterado, y si es posible, arreglarlo sola (como hace el código de Hamming) o pedir que se envíe de nuevo.
+Notacion en punto flotante.
 
-## Representación Física de las Señales
-Propuesto como **la relación entre la lógica y la electricidad**.
+- 236 x 10 ^3
+- notacion cientifica, exp indica pos. coma
+- la ALU (UAL), su reg. acumulador no trabaja con coma (usamo signo, matiza, exponente)
 
-* **Versión extendida:** Internamente, el hardware de conmutación debe transformar el diseño abstracto de la pizarra lógica a un fenómeno físico real lidian con voltajes, temperatura y humedad. Se establece una franja eléctrica de trabajo; por ejemplo, si un impulso posee entre 0 y 2 voltios se representará el estado "0", mientras que un impulso entre 3 y 4 voltios representará el estado "1".
-* **Versión simplificada:** Es la forma en que la computadora pasa los ceros y unos a electricidad de verdad, usando niveles de energía diferentes (como poca energía para un cero y mucha para un uno) sin que se mezclen.
+# Representación binaria de datos e instrucciones
+
+| Operación | Código Binario |
+| :--- | :--- |
+| STOP | 0000 |
+| SUM | 0001 |
+| SUS | 0010 |
+| DIV | 0011 |
+| MUL | 0100 |
+| SAI | 0101 |
+| ALM | 0110 |
+
+### Importancia de la codificación en la arquitectura de computadoras
+
+La codificación de la información es el pilar fundamental que permite la comunicación entre el lenguaje humano y el hardware. En el ejemplo del registro de instrucción presentado, se observa cómo una operación compleja como SUMAR se traduce a una secuencia binaria específica `0001`. Sin esta estandarización, sería imposible que la unidad de control interprete qué circuito activar o qué dirección de memoria consultar.
+
+Es importante aclarar que este ejemplo no forma parte de la tabla de contenidos principal del programa de estudio. El docente lo introdujo con el único fin de contextualizar cómo la teoría se aplica en la estructura física del procesador y para facilitar la comprensión de cómo los datos se transforman en acciones concretas dentro de la ALU.
+
+### Desglose de la codificación presentada
+
+* El campo `cod. oper.` con el valor `0001` identifica unívocamente la operación de suma para el sistema.
+* El campo `cond. Direcc.` define el modo en que se accederá a los datos, en este caso, de forma directa.
+* El campo `dir. oper.` contiene la dirección de memoria específica `000101` de donde se extraerá el valor a procesar.
+
+Esta estructura demuestra que la codificación no es una asignación arbitraria de números, sino un protocolo rígido que garantiza que el acumulador y la memoria trabajen de forma sincronizada. La precisión en estos códigos evita errores de ejecución y permite la automatización de procesos lógicos complejos mediante señales eléctricas elementales.
+
+## Sistemas alfanuméricos
+
+Como se codifica de un alfabeto a binario
+
+- BCD
+
+## Códigos Redundantes
+
+Dada una información (A a B) agregarle una redundancia para que punto B verifique si la información llegó bien o no.
