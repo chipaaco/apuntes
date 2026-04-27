@@ -1,0 +1,219 @@
+{"0": {
+    "doc": "Primera clase",
+    "title": "Primera clase",
+    "content": " ",
+    "url": "/apuntes/arquitectura/docs/teoria/01_primera_clase.html",
+    
+    "relUrl": "/docs/teoria/01_primera_clase.html"
+  },"1": {
+    "doc": "Primera clase",
+    "title": "TLDR",
+    "content": "Definiciones (Stallings, De Freitas y Yáber, Maruokefalidis); Arquitectura multinivel (Tenembaum); Modelos Lógicos de Componentes (Stallings: Organo Control, Morris Mano: Memoria a UC, Meinadier: Órgano Canal). Evolución del cómputo en generaciones; . ",
+    "url": "/apuntes/arquitectura/docs/teoria/01_primera_clase.html#tldr",
+    
+    "relUrl": "/docs/teoria/01_primera_clase.html#tldr"
+  },"2": {
+    "doc": "Primera clase",
+    "title": "Definiciones",
+    "content": "Antes de avanzar, resulta indispensable ubicar la material contextualizando conceptos fundamentales. El objetivo es comprender qué significa la arquitectura de computadoras y establecer su propósito. ",
+    "url": "/apuntes/arquitectura/docs/teoria/01_primera_clase.html#definiciones",
+    
+    "relUrl": "/docs/teoria/01_primera_clase.html#definiciones"
+  },"3": {
+    "doc": "Primera clase",
+    "title": "William Stallings: Computadora",
+    "content": "La define como una máquina digital electrónica programable para el tratamiento automático de la información, capaz de recibirla, operar sobre ella mediante procesos determinados y suministrar los resultados de tales operaciones. ",
+    "url": "/apuntes/arquitectura/docs/teoria/01_primera_clase.html#william-stallings-computadora",
+    
+    "relUrl": "/docs/teoria/01_primera_clase.html#william-stallings-computadora"
+  },"4": {
+    "doc": "Primera clase",
+    "title": "Definiciones de Arquitectura",
+    "content": "El autor Freitas y Yáber (2015) plantea que una arquitectura es un modelo de un sistema dentro de un contexto específico, que representa los componentes necesarios para desarrollar el sistema desde una perspectiva particular. El profesor asocia esta definición a la arquitectura de edificios. Así como un edificio comercial tiene una distribución distinta a una vivienda, el contexto de un computador justifica decisiones técnicas. La arquitectura establece esos lineamientos para crear un modelo real definiendo órganos, relaciones y capacidades en términos de costo, performance y tiempo de respuesta. La definición del Profesor Maurokefalidis indica que una arquitectura es aquella que determina el criterio lógico necesario de diseño para definir y relacionar los componentes de un Ordenador sin perder de vista su campo de aplicación. ",
+    "url": "/apuntes/arquitectura/docs/teoria/01_primera_clase.html#definiciones-de-arquitectura",
+    
+    "relUrl": "/docs/teoria/01_primera_clase.html#definiciones-de-arquitectura"
+  },"5": {
+    "doc": "Primera clase",
+    "title": "Arquitectura Multinivel",
+    "content": "Andrew Tanenbaum plantea que el diseño de una computadora se comprende mejor dividiéndolo en capas relacionadas, donde cada una aporta valor a la inferior y se comunica con la superior. Este modelo se divide en dos grandes bloques. Macroarquitectura . | Aplicaciones de usuario | Lenguajes de alto nivel | Lenguaje ensamblador | Sistema operativo | . Microarquitectura . | Máquina convencional o lenguaje de máquina | Microprogramación (indica a la lógica digital cómo ejecutar las operaciones elementales) | Lógica digital (diseño abstracto de circuitos combinacionales y secuenciales) | Nivel Físico | . ",
+    "url": "/apuntes/arquitectura/docs/teoria/01_primera_clase.html#arquitectura-multinivel",
+    
+    "relUrl": "/docs/teoria/01_primera_clase.html#arquitectura-multinivel"
+  },"6": {
+    "doc": "Primera clase",
+    "title": "Modelos Lógicos de Componentes",
+    "content": "Para modelar lógicamente las partes de una arquitectura se presentaron las visiones de tres autores principales. | Modelo de William Stallings que plantea la existencia de un órgano de control que funciona como director de orquesta, coordinando de manera interactiva la memoria central, el procesador de datos y los canales de entrada o salida. | Modelo de Morris Mano que utiliza un esquema tradicional centrado en la Unidad de Control, la unidad de cálculo y la memoria central, estableciendo que nada procesa la unidad aritmético lógica del exterior si primero no se aloja en la memoria central. | Modelo de Jean Pierre Meinadier que amplía el esquema anterior añadiendo formalmente el órgano canal, indispensable para coordinar y transportar los datos entre el exterior y la memoria central. | . ",
+    "url": "/apuntes/arquitectura/docs/teoria/01_primera_clase.html#modelos-l%C3%B3gicos-de-componentes",
+    
+    "relUrl": "/docs/teoria/01_primera_clase.html#modelos-lógicos-de-componentes"
+  },"7": {
+    "doc": "Primera clase",
+    "title": "Evolución y Estructura",
+    "content": "Un análisis histórico permite entender el desarrollo de los sistemas de cálculo actuales. | La Generación Cero se extiende hasta 1945 e incluye sistemas mecánicos o electromecánicos como ábacos, calculadoras mecánicas y sistemas basados en relés. | La Primera Generación abarca desde 1940 hasta 1955 utilizando tubos de vacío en máquinas enormes y lentas, donde la programación se hacía en lenguaje de máquina y un solo grupo gestionaba todo el proceso. | La Segunda Generación se sitúa entre 1955 y 1965 introduciendo los transistores, lo que permitió separar roles técnicos, operar mainframes en salas acondicionadas y crear el proceso por lotes. | La Tercera Generación comprende desde 1965 hasta 1980 destacándose por la incorporación de circuitos integrados que mejoraron costo y desempeño, junto con la llegada del IBM 360, discos duros, multiprogramación y tiempo compartido. | La Cuarta Generación inicia en 1980 utilizando integración a gran escala y abarca la evolución de procesadores Intel y arquitecturas RISC, el surgimiento de interfaces gráficas, sistemas operativos como Windows, UNIX o Linux y el trabajo en red. | La Quinta Generación aborda la computación cuántica basándose en la superposición de estados y el cúbit como unidad de información, requiriendo temperaturas cercanas al cero absoluto para procesar múltiples caminos simultáneamente en aplicaciones de inteligencia artificial, biomedicina y sistemas financieros. | . ",
+    "url": "/apuntes/arquitectura/docs/teoria/01_primera_clase.html#evoluci%C3%B3n-y-estructura",
+    
+    "relUrl": "/docs/teoria/01_primera_clase.html#evolución-y-estructura"
+  },"8": {
+    "doc": "Segunda clase",
+    "title": "Segunda clase",
+    "content": " ",
+    "url": "/apuntes/arquitectura/docs/teoria/02_segunda_clase.html",
+    
+    "relUrl": "/docs/teoria/02_segunda_clase.html"
+  },"9": {
+    "doc": "Segunda clase",
+    "title": "TLDR",
+    "content": "Sistemas Numéricos (Sistemas de Numeración y cambio de base, Aritmética binaria, Sistemas de Codificación y representación de los números); Codificación Binaria (Representación binaria de datos e instrucciones, Características de los espacios de representación, Aspectos de los sistemas de representación); Sistemas alfanuméricos (Características de los códigos, Principales sistemas de representación); Códigos redundantes (Características de los códigos, Códigos detectores, Códigos correctores); . ",
+    "url": "/apuntes/arquitectura/docs/teoria/02_segunda_clase.html#tldr",
+    
+    "relUrl": "/docs/teoria/02_segunda_clase.html#tldr"
+  },"10": {
+    "doc": "Segunda clase",
+    "title": "Sistemas Numéricos",
+    "content": "El Teorema Fundamental de la Numeración es la base para entender cómo cualquier número, en cualquier sistema, se puede desarmar y expresar como una suma de potencias. Elementos ($b$, $N$, $N \\equiv$ suma_potencias() . Sistemas de Numeración y cambio de base . | Decimal a $b$ . | Método de divisiones sucesivas entre la base b | Para números fraccionarios se realizan multiplicaciones sucesivas por la base b. | Consideración de restos mayores que 9 y Error de truncamiento | . | . ",
+    "url": "/apuntes/arquitectura/docs/teoria/02_segunda_clase.html#sistemas-num%C3%A9ricos",
+    
+    "relUrl": "/docs/teoria/02_segunda_clase.html#sistemas-numéricos"
+  },"11": {
+    "doc": "Segunda clase",
+    "title": "No clasificado",
+    "content": "Codificacion es B10 a B2, decodificación es B2 a B10 . Dec a Bin = Divisiones sucesivas. Divisiones Sucesivas . Notacion en punto flotante. | 236 x 10 ^3 | notacion cientifica, exp indica pos. coma | la ALU (UAL), su reg. acumulador no trabaja con coma (usamo signo, matiza, exponente) | . ",
+    "url": "/apuntes/arquitectura/docs/teoria/02_segunda_clase.html#no-clasificado",
+    
+    "relUrl": "/docs/teoria/02_segunda_clase.html#no-clasificado"
+  },"12": {
+    "doc": "Segunda clase",
+    "title": "Representación binaria de datos e instrucciones",
+    "content": "| Operación | Código Binario | . | STOP | 0000 | . | SUM | 0001 | . | SUS | 0010 | . | DIV | 0011 | . | MUL | 0100 | . | SAI | 0101 | . | ALM | 0110 | . Importancia de la codificación en la arquitectura de computadoras . La codificación de la información es el pilar fundamental que permite la comunicación entre el lenguaje humano y el hardware. En el ejemplo del registro de instrucción presentado, se observa cómo una operación compleja como SUMAR se traduce a una secuencia binaria específica 0001. Sin esta estandarización, sería imposible que la unidad de control interprete qué circuito activar o qué dirección de memoria consultar. Es importante aclarar que este ejemplo no forma parte de la tabla de contenidos principal del programa de estudio. El docente lo introdujo con el único fin de contextualizar cómo la teoría se aplica en la estructura física del procesador y para facilitar la comprensión de cómo los datos se transforman en acciones concretas dentro de la ALU. Desglose de la codificación presentada . | El campo cod. oper. con el valor 0001 identifica unívocamente la operación de suma para el sistema. | El campo cond. Direcc. define el modo en que se accederá a los datos, en este caso, de forma directa. | El campo dir. oper. contiene la dirección de memoria específica 000101 de donde se extraerá el valor a procesar. | . Esta estructura demuestra que la codificación no es una asignación arbitraria de números, sino un protocolo rígido que garantiza que el acumulador y la memoria trabajen de forma sincronizada. La precisión en estos códigos evita errores de ejecución y permite la automatización de procesos lógicos complejos mediante señales eléctricas elementales. ",
+    "url": "/apuntes/arquitectura/docs/teoria/02_segunda_clase.html#representaci%C3%B3n-binaria-de-datos-e-instrucciones",
+    
+    "relUrl": "/docs/teoria/02_segunda_clase.html#representación-binaria-de-datos-e-instrucciones"
+  },"13": {
+    "doc": "Segunda clase",
+    "title": "Sistemas alfanuméricos",
+    "content": "Como se codifica de un alfabeto a binario . | BCD | . ",
+    "url": "/apuntes/arquitectura/docs/teoria/02_segunda_clase.html#sistemas-alfanum%C3%A9ricos",
+    
+    "relUrl": "/docs/teoria/02_segunda_clase.html#sistemas-alfanuméricos"
+  },"14": {
+    "doc": "Segunda clase",
+    "title": "Códigos Redundantes",
+    "content": "Dada una información (A a B) agregarle una redundancia para que punto B verifique si la información llegó bien o no. ",
+    "url": "/apuntes/arquitectura/docs/teoria/02_segunda_clase.html#c%C3%B3digos-redundantes",
+    
+    "relUrl": "/docs/teoria/02_segunda_clase.html#códigos-redundantes"
+  },"15": {
+    "doc": "Boilerplate",
+    "title": "Circuitos Secuenciales",
+    "content": "Los circuitos secuenciales son sistemas lógicos digitales que funcionan sobre la base del tiempo. En estos sistemas las salidas no dependen solo de las combinaciones de las entradas actuales sino que también dependen del estado anterior del circuito. Esta capacidad de considerar la historia previa permite que el sistema tenga memoria. Para su funcionamiento se utiliza el concepto de autómatas finitos o máquinas de estados. ",
+    "url": "/apuntes/arquitectura/docs/boilerplate-typst.html#circuitos-secuenciales",
+    
+    "relUrl": "/docs/boilerplate-typst.html#circuitos-secuenciales"
+  },"16": {
+    "doc": "Boilerplate",
+    "title": "Autómatas Finitos",
+    "content": "El comportamiento de estos autómatas se define mediante dos funciones matemáticas principales. | La función de transición $G$ se encarga de actualizar el estado del autómata determinando el nuevo estado $Q_{t+1}$ a partir del estado anterior $Q_t$ y las entradas $E_t$. | La función de salida $F$ establece la respuesta en el instante futuro basándose en los estímulos de entrada y en los estados almacenados previamente. | . ",
+    "url": "/apuntes/arquitectura/docs/boilerplate-typst.html#aut%C3%B3matas-finitos",
+    
+    "relUrl": "/docs/boilerplate-typst.html#autómatas-finitos"
+  },"17": {
+    "doc": "Boilerplate",
+    "title": "Elementos de Memoria",
+    "content": "Para recordar el estado anterior el circuito utiliza elementos de memoria denominados biestables o flip-flops. Estos dispositivos tienen dos estados estables y utilizan compuertas lógicas realimentadas para retener un bit de información. | El Flip-Flop RS dispone de entradas Set y Reset pero presenta un estado de indeterminación si ambas entradas se activan en simultáneo. | El Flip-Flop D utiliza una compuerta inversora para evitar la indeterminación y requiere obligatoriamente un reloj para sincronizar su funcionamiento. | El Flip-Flop JK resuelve los fallos del modelo RS mediante una retroalimentación que invierte el valor almacenado cuando ambas entradas son uno. | El Flip-Flop T funciona como un disparador que complementa o invierte su estado en cada ciclo de reloj si la entrada se encuentra activa. | . ",
+    "url": "/apuntes/arquitectura/docs/boilerplate-typst.html#elementos-de-memoria",
+    
+    "relUrl": "/docs/boilerplate-typst.html#elementos-de-memoria"
+  },"18": {
+    "doc": "Boilerplate",
+    "title": "Herramientas de Diseño",
+    "content": "El diseño de estos circuitos se realiza mediante el uso de tablas que describen su lógica de transición. | La Tabla de Estado es un resumen que detalla a qué estado pasará el circuito dadas las entradas y el estado presente. | La Tabla de Excitación indica los valores exactos que se deben aplicar a las entradas del flip-flop para lograr un cambio de estado deseado. | . ",
+    "url": "/apuntes/arquitectura/docs/boilerplate-typst.html#herramientas-de-dise%C3%B1o",
+    
+    "relUrl": "/docs/boilerplate-typst.html#herramientas-de-diseño"
+  },"19": {
+    "doc": "Boilerplate",
+    "title": "Estructuras Complejas",
+    "content": "A partir de los circuitos secuenciales básicos se construyen estructuras fundamentales para la computación. | Los circuitos monoestables y astables permiten la manipulación del tiempo y la generación de oscilaciones para temporizadores. | Los registros de desplazamiento se forman encadenando flip-flops para mover cadenas de datos binarios en distintas direcciones. | Los contadores y descontadores binarios utilizan flip-flops para incrementar o disminuir valores en cada pulso de la señal de reloj. | . ",
+    "url": "/apuntes/arquitectura/docs/boilerplate-typst.html#estructuras-complejas",
+    
+    "relUrl": "/docs/boilerplate-typst.html#estructuras-complejas"
+  },"20": {
+    "doc": "Boilerplate",
+    "title": "Boilerplate",
+    "content": " ",
+    "url": "/apuntes/arquitectura/docs/boilerplate-typst.html",
+    
+    "relUrl": "/docs/boilerplate-typst.html"
+  },"21": {
+    "doc": "Registros, Buses, Señales Gobierno",
+    "title": "Registros y Buses de Datos",
+    "content": "Un registro es una organización lógica que agrupa un conjunto de biestables destinados a almacenar información binaria de forma temporal. Cada uno de estos componentes guarda un bit y define la longitud de palabra que la arquitectura puede procesar en una unidad de tiempo. Las funciones elementales de un registro incluyen la lectura y grabación de cadenas binarias. También permiten realizar operaciones adicionales como la puesta a cero, la complementación y la transferencia de información hacia otros componentes del sistema. Si se añade lógica combinacional y secuencial, el registro puede transformarse en un contador, descontador o registro de desplazamiento. Estas estructuras permiten el movimiento de datos hacia la derecha o izquierda y pueden organizarse como listas del tipo LIFO o FIFO. ",
+    "url": "/apuntes/arquitectura/docs/ejemplo.html#registros-y-buses-de-datos",
+    
+    "relUrl": "/docs/ejemplo.html#registros-y-buses-de-datos"
+  },"22": {
+    "doc": "Registros, Buses, Señales Gobierno",
+    "title": "Clasificación de los Registros",
+    "content": "Existen diversas categorías de registros según su aplicación específica dentro de la arquitectura del procesador. | Los registros de datos guardan números enteros y un ejemplo clásico es el registro acumulador de la unidad aritmético lógica. | Los registros de memoria están destinados exclusivamente a almacenar direcciones para el acceso al almacenamiento. | Los registros de propósito general o GPR pueden guardar tanto datos como direcciones y son la base de la arquitectura Von Neumann. | Los registros de coma flotante están diseñados para cálculos algebraicos con números decimales separando la mantisa del exponente. | Los registros de constantes son creados por hardware y funcionan como elementos de solo lectura para valores como la frecuencia del reloj. | Los registros de propósito específico mantienen información crítica del sistema como los punteros de pila o los indicadores de estado conocidos como flags. | . ",
+    "url": "/apuntes/arquitectura/docs/ejemplo.html#clasificaci%C3%B3n-de-los-registros",
+    
+    "relUrl": "/docs/ejemplo.html#clasificación-de-los-registros"
+  },"23": {
+    "doc": "Registros, Buses, Señales Gobierno",
+    "title": "Arquitectura de Buses",
+    "content": "Los buses son arreglos de líneas lógicas compuestos físicamente por hilos eléctricos o pistas metálicas sobre circuitos impresos. Su finalidad es interconectar los órganos del computador para transferir información mediante una conexión biunívoca entre hilos y biestables. En arquitecturas como la denominada Abacus se diferencia el Bus M para el transporte de datos e instrucciones y el Bus S reservado para direcciones de memoria. Un concepto físico fundamental es el tiempo de llenado o estabilización. Los electrones requieren una fracción de tiempo medida en nanosegundos para propagarse y saturar los hilos del bus con voltajes estables que representen los valores lógicos. ",
+    "url": "/apuntes/arquitectura/docs/ejemplo.html#arquitectura-de-buses",
+    
+    "relUrl": "/docs/ejemplo.html#arquitectura-de-buses"
+  },"24": {
+    "doc": "Registros, Buses, Señales Gobierno",
+    "title": "Señales de Gobierno y Transferencia",
+    "content": "Las señales de gobierno son microórdenes generadas por el secuenciador de la unidad de control para ejecutar las instrucciones de máquina. Estas señales coordinan el tráfico de datos en la ruta de información. | Las señales de nivel ocupan todo el tiempo entre los latidos del reloj y su función es estabilizar el contenido de un registro origen sobre el bus. | Las señales impulsionales son breves y se emiten cuando el bus alcanzó su estado de madurez para obligar al registro de destino a capturar la información. | . La interacción integral ocurre cuando el secuenciador emite una señal de nivel para volcar datos en el bus. Al finalizar el ciclo y con el bus plenamente cargado se emite la señal impulsional que fuerza al registro destino a leer y atrapar los datos en sus biestables. ",
+    "url": "/apuntes/arquitectura/docs/ejemplo.html#se%C3%B1ales-de-gobierno-y-transferencia",
+    
+    "relUrl": "/docs/ejemplo.html#señales-de-gobierno-y-transferencia"
+  },"25": {
+    "doc": "Registros, Buses, Señales Gobierno",
+    "title": "Registros, Buses, Señales Gobierno",
+    "content": " ",
+    "url": "/apuntes/arquitectura/docs/ejemplo.html",
+    
+    "relUrl": "/docs/ejemplo.html"
+  },"26": {
+    "doc": "Teoria",
+    "title": "Teoria",
+    "content": "Seccion de conceptos y desarrollo teorico de la materia. ",
+    "url": "/apuntes/arquitectura/docs/teoria/",
+    
+    "relUrl": "/docs/teoria/"
+  },"27": {
+    "doc": "Teoria",
+    "title": "Clases",
+    "content": ". | Primera clase | Clase 2: Representación y Codificación de la Información | . ",
+    "url": "/apuntes/arquitectura/docs/teoria/#clases",
+    
+    "relUrl": "/docs/teoria/#clases"
+  },"28": {
+    "doc": "Inicio",
+    "title": "Arquitectura de Computadores",
+    "content": "Bienvenido a los apuntes de Arquitectura de Computadores. ",
+    "url": "/apuntes/arquitectura/#arquitectura-de-computadores",
+    
+    "relUrl": "/#arquitectura-de-computadores"
+  },"29": {
+    "doc": "Inicio",
+    "title": "Contenido",
+    "content": "Estos apuntes cubren los conceptos fundamentales de la arquitectura de computadores, incluyendo el modelo de Von Neumann, la jerarquía de memoria y más. Arquitecturalmente valido. ",
+    "url": "/apuntes/arquitectura/#contenido",
+    
+    "relUrl": "/#contenido"
+  },"30": {
+    "doc": "Inicio",
+    "title": "Inicio",
+    "content": " ",
+    "url": "/apuntes/arquitectura/",
+    
+    "relUrl": "/"
+  }
+}
